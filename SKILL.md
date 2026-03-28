@@ -53,3 +53,4 @@ node scripts/capture-web-artifacts.mjs \
 6. Capture an `after` variant.
 7. Re-check the same sections plus the relevant full-page screenshots. One fix can create another issue nearby.
 8. If the first pass finds no issues, review again more critically before concluding.
+9. Clean up temporary review artifacts when the loop is finished unless the user explicitly wants to keep them. Remove throwaway output directories, stop any temporary local server you started, and leave only the screenshots or manifests that are still useful for comparison or handoff.
