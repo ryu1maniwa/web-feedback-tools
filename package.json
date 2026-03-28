@@ -1,10 +1,10 @@
 {
-  "name": "web-feedback-tools",
+  "name": "web-visual-feedback-skill",
   "version": "0.1.0",
   "type": "module",
   "description": "Capture full-page and section screenshots with Playwright for visual feedback loops.",
   "bin": {
-    "web-feedback-capture": "./bin/web-feedback-capture.mjs"
+    "web-visual-feedback-capture": "./bin/web-visual-feedback-capture.mjs"
   },
   "files": [
     "bin",
@@ -13,7 +13,7 @@
     "README.md"
   ],
   "scripts": {
-    "check": "node ./bin/web-feedback-capture.mjs --help"
+    "check": "node ./bin/web-visual-feedback-capture.mjs --help"
   },
   "dependencies": {
     "@playwright/test": "^1.55.0"

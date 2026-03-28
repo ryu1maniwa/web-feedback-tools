@@ -1,16 +1,16 @@
 ---
-name: web-feedback
+name: web-visual-feedback-skill
 description: Use this skill to capture full-page screenshots, numbered section screenshots, and PDFs from web pages with Playwright, then run visual feedback loops over hierarchy, spacing, copy density, and responsive behavior. Works for local apps, staging URLs, and before/after comparisons.
 ---
 
-# Web Feedback
+# Web Visual Feedback Skill
 
 Use this skill when the user wants to visually review or improve a web page.
 
 ## Primary command
 
 ```bash
-web-feedback-capture --base-url https://example.com
+node scripts/capture-web-artifacts.mjs --base-url https://example.com
 ```
 
 ## Common modes
@@ -18,19 +18,19 @@ web-feedback-capture --base-url https://example.com
 Local project with built-in preview:
 
 ```bash
-web-feedback-capture --project-dir . --variant before
+node scripts/capture-web-artifacts.mjs --project-dir . --variant before
 ```
 
 Already-running app:
 
 ```bash
-web-feedback-capture --base-url http://127.0.0.1:3000 --variant after
+node scripts/capture-web-artifacts.mjs --base-url http://127.0.0.1:3000 --variant after
 ```
 
 Custom server command:
 
 ```bash
-web-feedback-capture \
+node scripts/capture-web-artifacts.mjs \
   --server-command "npm run dev" \
   --ready-url http://127.0.0.1:3000 \
   --base-url http://127.0.0.1:3000

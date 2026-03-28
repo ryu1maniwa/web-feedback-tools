@@ -1,4 +1,4 @@
-# web-feedback-tools
+# web-visual-feedback-skill
 
 Capture full-page screenshots, numbered section screenshots, and optional PDFs with Playwright for visual feedback loops.
 
@@ -12,13 +12,13 @@ npx playwright install chromium
 ## CLI
 
 ```bash
-node ./bin/web-feedback-capture.mjs --help
+node ./bin/web-visual-feedback-capture.mjs --help
 ```
 
 Or, once linked or installed globally:
 
 ```bash
-web-feedback-capture --help
+web-visual-feedback-capture --help
 ```
 
 ## Examples
@@ -26,7 +26,7 @@ web-feedback-capture --help
 Capture a live URL:
 
 ```bash
-web-feedback-capture \
+web-visual-feedback-capture \
   --base-url https://example.com \
   --output-dir artifacts/example-review
 ```
@@ -34,7 +34,7 @@ web-feedback-capture \
 Capture a local Vite project:
 
 ```bash
-web-feedback-capture \
+web-visual-feedback-capture \
   --project-dir . \
   --variant before
 ```
@@ -42,14 +42,14 @@ web-feedback-capture \
 Capture before/after variants:
 
 ```bash
-web-feedback-capture --project-dir . --output-dir artifacts/hero-tune --variant before
-web-feedback-capture --project-dir . --output-dir artifacts/hero-tune --variant after --skip-build
+web-visual-feedback-capture --project-dir . --output-dir artifacts/hero-tune --variant before
+web-visual-feedback-capture --project-dir . --output-dir artifacts/hero-tune --variant after --skip-build
 ```
 
 Use a custom server command:
 
 ```bash
-web-feedback-capture \
+web-visual-feedback-capture \
   --server-command "npm run dev" \
   --ready-url http://127.0.0.1:3000 \
   --base-url http://127.0.0.1:3000
@@ -58,7 +58,7 @@ web-feedback-capture \
 ## Output structure
 
 ```text
-artifacts/web-feedback/<run-or-variant>/
+artifacts/web-visual-feedback/<run-or-variant>/
   manifest.json
   pages/
     desktop/00-full.png
