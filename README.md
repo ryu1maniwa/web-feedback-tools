@@ -78,3 +78,5 @@ artifacts/web-feedback/<run-or-variant>/
 - Section discovery defaults to `main [data-section]`.
 - Use `--section-selector` to adapt to other page structures.
 - Use `--variant before` and `--variant after` to keep comparison runs aligned.
+- Treat visual QA as a bug hunt, not a confirmation pass. If a first inspection finds zero issues, inspect again more critically.
+- Review full-page screenshots first, then numbered sections. Re-check affected areas after each fix because one visual change often creates another issue nearby.
