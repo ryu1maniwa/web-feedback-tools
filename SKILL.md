@@ -1,5 +1,5 @@
 ---
-name: web-visual-feedback-skill
+name: web-visual-feedback
 description: Use this skill to capture full-page screenshots, numbered section screenshots, and PDFs from web pages with Playwright, then run visual feedback loops over hierarchy, spacing, copy density, and responsive behavior. Works for local apps, staging URLs, and before/after comparisons.
 ---
 

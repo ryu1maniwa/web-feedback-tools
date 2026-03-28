@@ -1,5 +1,5 @@
 {
-  "name": "web-visual-feedback-skill",
+  "name": "web-visual-feedback",
   "version": "0.1.0",
   "type": "module",
   "description": "Capture full-page and section screenshots with Playwright for visual feedback loops.",

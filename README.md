@@ -1,4 +1,4 @@
-# web-visual-feedback-skill
+# web-visual-feedback
 
 Capture full-page screenshots, numbered section screenshots, and optional PDFs with Playwright for visual feedback loops.
 
